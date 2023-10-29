@@ -5,21 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 01 - Card de Games </title>
 </head>
+
+<style>
+    .container{
+        background-color: #200D23;
+        color: white;
+        font-size: small;
+        text-align: center;
+
+        margin: auto;
+        padding: 5px;
+        width: 600px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .main-title{
+        color: #FECD23;
+        font-size: larger;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .main-text{
+        padding-top: 5px;
+    }
+    .flex-container{
+        margin: 8px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: #551B5F;
+        font-size: medium;
+    }
+</style>
+
 <body>
 
-    <div>
-        GAMES LOVERS ENQUETE
+    <div class="container">
+        <div class="main-title">
+            GAMES LOVERS ENQUETE
+        </div>
         <div>
             Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por<br>
             video games. participe da nossa enquete e escolha entre os três finalistas!
-            <div>
-                A sua escolha é muito importante para nós.<br>
+            <div class="main-text">
+                A sua escolha é muito importante para nós.
+            </div>
+            <div class="main-text">
                 no final da enquete iremos sortear um brinde entre os participantes.
             </div>
+            
+            <div class="flex-container">
+                Digite o seus dados e escolha entre os três finalistas!
+            </div>
+            
         </div>
-        <div>
-            Digite o seus dados e escolha entre os três finalistas!
-        </div>
+
     </div>
     
 </body>
