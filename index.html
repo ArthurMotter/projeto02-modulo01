@@ -25,12 +25,14 @@
         font-size: 30px;
         font-weight: 600;
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 25px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .main-text{
         padding-top: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .element-title{
@@ -41,9 +43,9 @@
     }
 
     .sub-text{
-        font-size: 24px;
-        margin: 10px;
-        margin-top: 20px;
+        font-size: 26px;
+        margin-bottom: 20px;
+        margin-top: 5px;
         padding-top: 20px;
         text-align: center;
     }
@@ -58,7 +60,7 @@
     }
 
     .inputs{
-        width: 65%;
+        width: 75%;
         height: 3px;
         padding: 15px;
         font-size: 15px;
@@ -80,6 +82,11 @@
         margin: 15px;
     }
 
+    .image{
+        text-align: center;
+        justify-content: center;
+    }
+
     .buttons{
         width: 50%;
         height: 40px;
@@ -87,6 +94,39 @@
         border-radius: 5px;
         background-color: black;
         color: white;
+    }
+
+    @media screen and (max-width: 620px){
+        html{
+            font-size: 14px;
+        }   
+        .flex-container{
+           flex-direction: column;
+        }
+        .column{
+           box-sizing: border-box;
+        }
+        .container{
+           width: 95%;
+        }
+        .sub-container{
+            padding: 10px;
+            margin: 20px;
+        }
+        .element-title{
+            font-size: 28px;
+            font-weight: 500;
+            margin-top: 32px;
+        }
+        .image{
+            width: 95%;
+        }
+        .buttons{
+            width: 60%;
+            height: 60px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
     }
 </style>
 
@@ -96,8 +136,8 @@
         <div class="main-title">
             GAMES LOVERS ENQUETE
         </div>
-        <div>
-            Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por<br>
+        <div class="main-text">
+            Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por
             video games. participe da nossa enquete e escolha entre os três finalistas!
             <div class="main-text">
                 A sua escolha é muito importante para nós.
@@ -120,32 +160,27 @@
             
             <div class="flex-container">
                 <div class="column">
-                    <div>
-                        <div class="element-title">Esportes</div>
-                        <object data="sports_soccer_white.svg" type="image/svg+xml"></object>
-                        <div> <button class="buttons"> Votar </button> </div>
-                    </div>
+                    <div class="element-title">Esportes</div>
+                    <object class="image" data="sports_soccer_white.svg" type="image/svg+xml"></object>
+                    <div> <button class="buttons"> Votar </button> </div>
                 </div>
                     
                 <div class="column">
-                    <div>
-                        <div class="element-title">Simulação</div>
-                        <object data="local_airport_white.svg" type="image/svg+xml"></object>
-                        <div> <button class="buttons"> Votar </button> </div>
-                    </div>
+                    <div class="element-title">Simulação</div>
+                    <object class="image" data="local_airport_white.svg" type="image/svg+xml"></object>
+                    <div> <button class="buttons"> Votar </button> </div>
                 </div>
                     
                 <div class="column">
-                    <div>
-                        <div class="element-title">Estratégia</div>
-                        <object data="psychology_white.svg" type="image/svg+xml"></object>
-                        <div> <button class="buttons"> Votar </button> </div>
-                    </div>
+                    <div class="element-title">Estratégia</div>
+                    <object class="image" data="psychology_white.svg" type="image/svg+xml"></object>
+                    <div> <button class="buttons"> Votar </button> </div>
                 </div>
 
             </div>
             
         </div>
+
     </div>
     
 </body>
