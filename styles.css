@@ -1,0 +1,128 @@
+body{
+    color: white;
+}
+
+input{
+    width: 75%;
+    height: 3px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+}
+
+button{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    background-color: #200D23;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+
+    margin: auto;
+    padding: 5px;
+    width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-title{
+    color: #FECD23;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.main-text{
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.element-title{
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sub-text{
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sub-container{
+    margin: 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: #551B5F;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.flex-container{
+    margin: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.column{
+    border-radius: 5px;
+    background-color: #2837D4;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+.image{
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 620px){
+    html{
+        font-size: 14px;
+    }   
+    button{
+        width: 60%;
+        height: 60px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .container{
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sub-container{
+        padding: 10px;
+        margin: 20px;
+    }
+    .flex-container{
+       flex-direction: column;
+    }
+    .column{
+       box-sizing: border-box;
+    }
+    .element-title{
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 32px;
+        text-align: center;
+    }
+    .image{
+        width: 95%;
+    }
+}

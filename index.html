@@ -3,135 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Projeto 01 - Card de Games </title>
 </head>
 
-<style>
-    .container{
-        background-color: #200D23;
-        color: white;
-        font-size: 15px;
-        text-align: center;
-
-        margin: auto;
-        padding: 5px;
-        width: 600px;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-
-    .main-title{
-        color: #FECD23;
-        font-size: 30px;
-        font-weight: 600;
-        text-align: center;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .main-text{
-        padding-top: 15px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .element-title{
-        font-size: larger;
-        font-weight: 600;
-        text-align: center;
-        padding-top: 20px;
-    }
-
-    .sub-text{
-        font-size: 26px;
-        margin-bottom: 20px;
-        margin-top: 5px;
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .sub-container{
-        margin: 10px;
-        margin-top: 40px;
-        border-radius: 5px;
-        background-color: #551B5F;
-        font-size: large;
-        margin-bottom: 20px;
-    }
-
-    .inputs{
-        width: 75%;
-        height: 3px;
-        padding: 15px;
-        font-size: 15px;
-        border-radius: 5px;
-        border: 0;
-        margin: 10px;
-    }
-
-    .flex-container{
-        margin: 8px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .column{
-        border-radius: 5px;
-        background-color: #2837D4;
-        box-sizing: border-box;
-        margin: 15px;
-    }
-
-    .image{
-        text-align: center;
-        justify-content: center;
-    }
-
-    .buttons{
-        width: 50%;
-        height: 40px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        background-color: black;
-        color: white;
-    }
-
-    @media screen and (max-width: 620px){
-        html{
-            font-size: 14px;
-        }   
-        .flex-container{
-           flex-direction: column;
-        }
-        .column{
-           box-sizing: border-box;
-        }
-        .container{
-           width: 95%;
-        }
-        .sub-container{
-            padding: 10px;
-            margin: 20px;
-        }
-        .element-title{
-            font-size: 28px;
-            font-weight: 500;
-            margin-top: 32px;
-        }
-        .image{
-            width: 95%;
-        }
-        .buttons{
-            width: 60%;
-            height: 60px;
-            margin-top: 5px;
-            font-size: 16px;
-        }
-    }
-</style>
-
 <body>
-
     <div class="container">
         <div class="main-title">
             GAMES LOVERS ENQUETE
@@ -145,43 +21,38 @@
             <div class="main-text">
                 no final da enquete iremos sortear um brinde entre os participantes.
             </div>
-            
         </div>
 
         <div class="sub-container">
             <div class="sub-text">
                 Digite o seus dados e escolha entre os três finalistas!
             </div>
-            
             <div>
-                <input class="inputs" type="text" placeholder="Digite seu nome:"/>
-                <input class="inputs" type="email" placeholder="Digite seu e-mail:"/>
+                <input type="text" placeholder="Digite seu nome"/>
+                <input type="email" placeholder="Digite seu e-mail"/>
             </div> 
             
             <div class="flex-container">
                 <div class="column">
                     <div class="element-title">Esportes</div>
                     <object class="image" data="sports_soccer_white.svg" type="image/svg+xml"></object>
-                    <div> <button class="buttons"> Votar </button> </div>
+                    <div> <button> Votar </button> </div>
                 </div>
                     
                 <div class="column">
                     <div class="element-title">Simulação</div>
                     <object class="image" data="local_airport_white.svg" type="image/svg+xml"></object>
-                    <div> <button class="buttons"> Votar </button> </div>
+                    <div> <button> Votar </button> </div>
                 </div>
                     
                 <div class="column">
                     <div class="element-title">Estratégia</div>
                     <object class="image" data="psychology_white.svg" type="image/svg+xml"></object>
-                    <div> <button class="buttons"> Votar </button> </div>
+                    <div> <button> Votar </button> </div>
                 </div>
-
             </div>
             
         </div>
-
     </div>
-    
 </body>
 </html>
