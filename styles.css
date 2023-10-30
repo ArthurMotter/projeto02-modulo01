@@ -1,34 +1,43 @@
 body{
     color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.89rem;
+    text-align: center;
 }
 
 input{
     width: 75%;
     height: 3px;
-    padding: 15px;
-    font-size: 15px;
+    padding: 0.95rem;
+    font-size: 0.95rem;
     border-radius: 5px;
     border: 0;
-    margin: 10px;
+    margin: 0.64rem;
 }
 
 button{
     width: 50%;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 0.64rem;
     border-radius: 5px;
+    border: 0;
+
     background-color: black;
     color: white;
+    font-size: 1rem;
+    font-weight: 500;
 }
+
+button:hover {
+    background-color: #E9E9E9;
+    color: black;
+ }
 
 .container{
     background-color: #200D23;
-    color: white;
-    font-size: 15px;
-    text-align: center;
 
     margin: auto;
-    padding: 5px;
+    padding: 0.32rem;
     width: 600px;
     border-radius: 5px;
     overflow: hidden;
@@ -36,45 +45,44 @@ button{
 
 .main-title{
     color: #FECD23;
-    font-size: 30px;
+    font-size: 1.85rem;
     font-weight: 600;
     text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .main-text{
-    padding-top: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 0.78rem;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .element-title{
-    font-size: larger;
-    font-weight: 600;
+    font-size: 1.50rem;
+    font-weight: 400;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.24rem;
 }
 
 .sub-text{
-    font-size: 26px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    padding-top: 20px;
+    font-size: 1.42rem;
+    margin-bottom: 1.30rem;
+    margin-top: 0.32rem;
+    padding-top: 1.30rem;
     text-align: center;
 }
 
 .sub-container{
-    margin: 10px;
-    margin-top: 40px;
-    border-radius: 5px;
+    margin: 0.64rem;
+    margin-top: 2.60rem;
+    border-radius: 0.32rem;
     background-color: #551B5F;
-    font-size: large;
-    margin-bottom: 20px;
+    margin-bottom: 1.30rem;
 }
 
 .flex-container{
-    margin: 8px;
+    margin: 0.50rem;
     display: flex;
     justify-content: space-around;
 }
@@ -83,7 +91,7 @@ button{
     border-radius: 5px;
     background-color: #2837D4;
     box-sizing: border-box;
-    margin: 15px;
+    margin: 0.95rem;
 }
 
 .image{
@@ -118,7 +126,6 @@ button{
     }
     .element-title{
         font-size: 28px;
-        font-weight: 500;
         margin-top: 32px;
         text-align: center;
     }
